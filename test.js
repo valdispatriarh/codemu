@@ -1207,6 +1207,11 @@ function l(...args) {
 //     l('Fall')
 // }
 
+// let month = 8
+// let season = Math.floor((month % 12) / 3)
+// let seasons = ['winter', 'spring', 'summer', 'fall']
+// l(seasons[season])    
+
 // let a = 'gjgqbsfhasdb'
 // if(a[0] == 'j'){
 //     l('ok')
