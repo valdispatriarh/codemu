@@ -44,13 +44,13 @@
 // }
 // console.log(y)
 
-// let num = 123456789
-// let strNum = String(num)
-// let strNumRevers = []
-// for(let i = strNum.length-1; i >= 0; i--){
-//     strNumRevers.push(strNum[i])
-// }
-// console.log(strNumRevers.join(''))
+let num = 123456789
+let strNum = String(num)
+let strNumRevers = []
+for(let i = strNum.length-1; i >= 0; i--){
+    strNumRevers.push(strNum[i])
+}
+console.log(+strNumRevers.join(''))
 
 //////58
 // let r = 45
