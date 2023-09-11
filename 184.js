@@ -11,3 +11,14 @@ for(let elem of arr3){
 console.log(3, Math.sqrt(sum184))
 
 
+let arr3b = [4, 2, 5, 19, 13, 0, 10]
+let newArr3b = []
+for(let elem of arr3b){
+    newArr3b.push(elem**3)
+}
+let total = newArr3b.reduce(function(a, b){
+    return a + b
+})
+console.log(3, Math.sqrt(total))
+
+
