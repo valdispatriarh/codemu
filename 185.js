@@ -12,3 +12,4 @@ let obj185 = {
 obj185.ceil = ceil
 obj185.floor = floor
 console.log(num2, obj185)
+
