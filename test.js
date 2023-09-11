@@ -44,13 +44,13 @@
 // }
 // console.log(y)
 
-let num = 123456789
-let strNum = String(num)
-let strNumRevers = []
-for(let i = strNum.length-1; i >= 0; i--){
-    strNumRevers.push(strNum[i])
-}
-console.log(+strNumRevers.join(''))
+// let num = 123456789
+// let strNum = String(num)
+// let strNumRevers = []
+// for(let i = strNum.length-1; i >= 0; i--){
+//     strNumRevers.push(strNum[i])
+// }
+// console.log(+strNumRevers.join(''))
 
 //////58
 // let r = 45
@@ -225,13 +225,12 @@ console.log(+strNumRevers.join(''))
 // fg[3] = 4
 // console.log(fg)
 
-// //72
-// let fg = [3232, 3232, 2323, 'erer']
-// fg[0] += '!'
-// fg[1] += '!'
-// fg[2] += '!'
-// fg[3] += '!'
-// console.log(fg)
+//72
+let arr = [1, 2, 3, 4]
+for(let i = 0; i < arr.length; i++){
+    arr[i] = arr[i]+3
+}
+console.log(arr)
 
 //73
 // let s =[1, 2, 3]
