@@ -2,7 +2,7 @@
 function getRandomValues(min, max){
    return Math.floor(Math.random() * (max - min + 1)) + min
 }
-console.log(1, getRandomValues(10, 100))
+console.log(1, getRandomValues(1, 100))
 
 let arr187 = []
 let numMax = 9007199254740991
