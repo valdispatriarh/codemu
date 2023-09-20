@@ -6,10 +6,10 @@ console.log(1, getRandomValues(1, 100))
 
 let arr187 = []
 let numMax = 9007199254740991
-for(let i = 0; i < 10; i++){
-    function getRandomValues2(max, min){
+function getRandomValues2(max, min){
         return Math.floor(Math.random() * (max - min + 1)) + min
     }
+for(let i = 0; i < 10; i++){
     arr187.push(getRandomValues2(numMax, -numMax))
 }
 console.log(arr187)
