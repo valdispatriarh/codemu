@@ -6,10 +6,8 @@ let num2 = Math.sqrt(587)
 let ceil = Math.ceil(num2)
 let floor = Math.floor(num2)
 let obj185 = {
-    'ceil': undefined,
-    'floor': undefined
+    'ceil': `${ceil}`,
+    'floor': `${floor}`
 }
-obj185.ceil = ceil
-obj185.floor = floor
 console.log(num2, obj185)
 
