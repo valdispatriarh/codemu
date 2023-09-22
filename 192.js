@@ -10,4 +10,7 @@ while(str1922.includes('-')){
 }
 console.log(str1922)
 
+let str1923 = '1-2-3-4-5'
+str1923 = str1923.replaceAll('-', '.')
+console.log(str1923)
 
