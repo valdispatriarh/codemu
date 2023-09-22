@@ -3,11 +3,9 @@ let num = Math.sqrt(379)
 console.log(Math.round(num), +num.toFixed(1), +num.toFixed(2))
 
 let num2 = Math.sqrt(587)
-let ceil = Math.ceil(num2)
-let floor = Math.floor(num2)
 let obj185 = {
-    'ceil': `${ceil}`,
-    'floor': `${floor}`
+    'ceil': Math.ceil(num2),
+    'floor': Math.floor(num2)
 }
 console.log(num2, obj185)
 
