@@ -8,5 +8,5 @@ console.log(res205)
 function func205(num2052){
     return num2052**(1/2)
 }
-let res = func205(3) + func205(4)
-console.log(res)
+let res2052 = func205(3) + func205(4)
+console.log(res2052)
