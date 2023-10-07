@@ -93,13 +93,21 @@ function getDigitsSum(num) {
 }
 //10//////////////////////////////////////
 console.log(isPrime(13)); // должен вывести true 
+console.log(isPrime(2))
+console.log(isPrime(3))
+console.log(isPrime(5))
+console.log(isPrime(7))
 console.log(isPrime(10));
+console.log(isPrime(-10));
+
 function isPrime(num) {
-    let flag10 = true
+	if (num <= 1) {
+        return false;
+    }
 	for (let i = 2; i < num; i++) {
 		if (num % i == 0) {
-			flag10 = false;
+			return false;
 		}
 	}
-    return flag10
+    return true
 }
