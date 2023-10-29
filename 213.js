@@ -10,17 +10,19 @@ function calcAverage(arr) {
 console.log(calcAverage([3, 4, 5]))
 
 function calcQuotientArrays(arr1, arr2) {
-    function calcSumArr(arr){
+    let res1 = calcSumArr(arr1)
+    let res2 = calcSumArr(arr2)
+	return res1 / res2;
+}
+
+function calcSumArr(arr){
         let res = 0;
         for (let elem of arr) {
 		    res += elem;
 	    }
         return res
     }
-    let res1 = calcSumArr([...arr1])
-    let res2 = calcSumArr([...arr2])
-	return res1 / res2;
-}
+
 console.log(calcQuotientArrays([1, 2, 7], [1, 2, 2]))
 //1) па першае змяняем назву з func на calcQuotientArrays
 //2) затым аднолькавы код выносім у функцыю calcSumArr

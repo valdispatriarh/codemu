@@ -48,16 +48,25 @@ function changeFirstSimbolToUpperCase(str){
 }
 console.log(changeFirstSimbolToUpperCase('papa'))
 //6/////////////////////////////////////////////
+
 function changeFirstSimbolInWordToUpperCase(str){
    let arr =  str.split(' ')
    let newArr = []
-      for(let i = 0; i < arr.length; i++){
-        newArr.push(arr[i].slice(0, 1).toUpperCase() + arr[i].slice(1))
+      for(let elem of arr){
+        newArr.push(elem.slice(0, 1).toUpperCase() + elem.slice(1))
    }
    return newArr.join(' ')
-    // return str.slice(0, 1).toUpperCase() + str.slice(1)
 }
-console.log(changeFirstSimbolInWordToUpperCase('papa mama'))
+console.log(6, changeFirstSimbolInWordToUpperCase('papa mama'))
+
+function changeFirstSimbolInWordToUpperCase2(str){
+    let arr = str.split(' ')
+    let newArr = arr.map((elem) => {return elem.slice(0, 1).toUpperCase() + elem.slice(1)})
+    return newArr.join(' ')
+}
+   
+console.log(6.2, changeFirstSimbolInWordToUpperCase2('papa mama'))
+
 //7//////////////////////////////////////////////////////////////////////
 function fillArrNum(num){
     let arr = []
@@ -67,6 +76,11 @@ function fillArrNum(num){
     return arr
 }
 console.log(fillArrNum(10))
+
+function fillArrNum2(num){
+    return Array.from({length: num}, (v, k) => k + 1);
+}
+console.log(7.2, fillArrNum2(10))
 //8///////////////////////////////////////////////////////////////////////
 function calcSumElemNum(num){
     let sum = 0
@@ -77,6 +91,13 @@ function calcSumElemNum(num){
 }
 console.log(calcSumElemNum(111))
 console.log(calcSumElemNum(123))
+
+function calcSumElemNum2(num){
+    let sum = String(num).split('').reduce((acc, v) => {return acc + +v}, 0)
+    return sum
+}
+console.log(8.2, calcSumElemNum2(111))
+console.log(8.2, calcSumElemNum2(123))
 //9///////////////////////////////////////////////////////////////////
 function isLeap(year) {
     let leap = false
@@ -98,14 +119,15 @@ function calcDayToSeconds(sec) {
 console.log(calcDayToSeconds(86400))
 //11///////////////////////////////////////
 function getRandomElemToArr(arr){
-    function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
     let randomIndex = getRandomInt(0, arr.length-1)
     return arr[randomIndex]
 }
+function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 console.log(getRandomElemToArr([1, 2, 3, 4, 5]))
 console.log(getRandomElemToArr([1, 2, 3, 4, 5]))
 console.log(getRandomElemToArr([1, 2, 3, 4, 5]))

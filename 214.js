@@ -27,7 +27,7 @@ function calcSumElemArr(arr2143) {
 	}
     return res
 }
-console.log(calcSumElemArr([...arr2143]))
+console.log(calcSumElemArr(arr2143))
 //4///////////////////////////////////////////////////////////
 function func1() {
 	return 3;
@@ -68,7 +68,7 @@ console.log(addZeroTo1Before9(3))
 console.log(addZeroTo1Before9(11))
 //8////////////////////////////////////////////////
 let arr214q8 = [1, 2, 3, 4, 5];
-console.log(sum([...arr214q8]));
+console.log(sum(arr214q8));
 
 function sum(arr) {
 	let res = 0;
