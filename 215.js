@@ -8,30 +8,44 @@ function calcSumElemArr215(arr) {
     return sum
 }
 console.log(calcSumElemArr215([1, 2, 3, 4, 5]))
+
+function calcSumElemArr2152(arr) {
+    let res = arr.reduce((acc, elem) => acc + elem)
+    return res
+}
+console.log(calcSumElemArr2152([1, 2, 3, 4, 5]))
+
 //2//////////////////////////////
 function getDivisors(num){
+    let newNum = Math.abs(num)
     let i = 1
     let arr215q2 = []
-    while(num !== i){
-        if( num % i === 0){
+    while(i <= newNum / 2){
+        if( newNum % i === 0){
         arr215q2.push(i)
+            if (num < 0){arr215q2.push(-i)}
         } 
         ++i
     }
+    arr215q2.push(newNum)
+    if (num < 0){arr215q2.push(-newNum)}
     return arr215q2
 }
+console.log(getDivisors(-10))
 console.log(getDivisors(10))
 // прапанова чата па аптымізацыі
 function getDivisors2(num) {
-    const divisors = [];
-    for (let i = 1; i <= num / 2; i++) {
+    let newNum = Math.abs(num)
+    let divisors = [];
+    for (let i = 1; i <= newNum / 2; i++) {
         if (num % i === 0) {
-            divisors.push(i);
-        }
-    }
-    divisors.push(num); // Добавляем само число в список делителей
-    return divisors;
-}
+            if (num < 0){divisors.push(-i)}
+            divisors.push(i); }}
+    divisors.push(num)
+    if (num < 0){divisors.push(-num)}
+    return divisors;}
+console.log('2-215', getDivisors2(-10))
+console.log('2-215', getDivisors2(10))
 //3/////////////////////////
 function getArrToStr(str) {
     return  str.split('')
